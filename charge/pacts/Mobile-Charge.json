@@ -1,0 +1,40 @@
+{
+  "provider": {
+    "name": "Charge"
+  },
+  "consumer": {
+    "name": "Mobile"
+  },
+  "interactions": [
+    {
+      "description": "Test the data from url /mobilecharge/userId",
+      "request": {
+        "method": "GET",
+        "path": "/mobilecharge/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "chargeId": 1,
+          "brand": "samsung"
+        }
+      },
+      "providerStates": [
+        {
+          "name": "testProvider"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    },
+    "pact-jvm": {
+      "version": "3.6.7"
+    }
+  }
+}
